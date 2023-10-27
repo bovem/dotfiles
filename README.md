@@ -19,4 +19,4 @@ zsh post-zsh-setup.sh
 
 4. Open `tmux` and execute `Ctrl+Space` then `I`
 
-5. Open nvim to install packages
+5. Open nvim to install package
