@@ -20,15 +20,15 @@ rm -rf ~/.config/kitty/theme.conf
 # cp ~/.config/kitty/kitty-themes/themes/VibrantInk.conf ~/.config/kitty/theme.conf
 cp .config/kitty/theme.conf ~/.config/kitty/theme.conf
 
-echo "Install Meslo nerd font"
+echo "Install JetBrainsMono nerd font"
 # You can choose another at: https://www.nerdfonts.com/font-downloads
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Meslo.zip
-rm ~/.fonts/Meslo*
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+rm ~/.fonts/JetBrainsMono*
 rm ~/.fonts/OFL.txt
 rm ~/.fonts/readme.md
 rm ~/.fonts/LICENSE.txt
-unzip Meslo.zip -d ~/.fonts
-rm Meslo.zip*
+unzip JetBrainsMono.zip -d ~/.fonts
+rm JetBrainsMono.zip*
 fc-cache -fv
 
 echo "Copy kitty.conf"
@@ -68,4 +68,3 @@ cp -r .config/nvim ~/.config/nvim
 
 #echo "Source ~/.zshrc"
 #source ~/.zshrc
-
