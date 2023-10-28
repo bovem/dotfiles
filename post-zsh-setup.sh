@@ -64,7 +64,7 @@ echo "Remove LazyVim git folder"
 rm -rf ~/.config/nvim/.git
 
 echo "Copy LazyVim configs"
-cp -r .config/nvim ~/.config/nvim
+cp -r .config/nvim ~/.config
 
 #echo "Source ~/.zshrc"
 #source ~/.zshrc
