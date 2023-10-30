@@ -16,6 +16,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.
 # git clone --depth 1 https://github.com/dexpota/kitty-themes.git ~/.config/kitty/kitty-themes
 
 echo "Set Kitty theme"
+mkdir -p ~/.config/kitty
 rm -rf ~/.config/kitty/theme.conf
 # cp ~/.config/kitty/kitty-themes/themes/VibrantInk.conf ~/.config/kitty/theme.conf
 cp .config/kitty/theme.conf ~/.config/kitty/theme.conf
@@ -23,6 +24,7 @@ cp .config/kitty/theme.conf ~/.config/kitty/theme.conf
 echo "Install JetBrainsMono nerd font"
 # You can choose another at: https://www.nerdfonts.com/font-downloads
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+mkdir -p ~/.fonts
 rm ~/.fonts/JetBrainsMono*
 rm ~/.fonts/OFL.txt
 rm ~/.fonts/readme.md
@@ -47,6 +49,7 @@ echo "Install libtmux python package"
 python3 -m pip install --user libtmux
 
 echo "Copy tmux.conf"
+mkdir -p ~/.config/tmux
 rm ~/.config/tmux/tmux.conf
 cp .config/tmux/tmux.conf ~/.config/tmux/tmux.conf
 
@@ -61,6 +64,7 @@ echo "Clone LazyVim starter template"
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 echo "Remove LazyVim git folder"
+mkdir -p ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 
 echo "Copy LazyVim configs"
