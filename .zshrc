@@ -45,6 +45,9 @@ else
     export EDITOR='nvim'
 fi
 
+alias vim="nvim"
+alias lg="lazygit"
+
 export KITTY_CONFIG_DIRECTORY="${USER}/.config/kitty"
 source $ZSH/oh-my-zsh.sh
 

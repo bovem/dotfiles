@@ -55,16 +55,20 @@ cp .config/tmux/tmux.conf ~/.config/tmux/tmux.conf
 
 echo "Installing lazyvim"
 echo "Backup existing nvim files"
+rm -rf ~/.config/nvim.bak
+rm -rf ~/.local/share/nvim.bak
+rm -rf ~/.local/state/nvim.bak
+rm -rf ~/.cache/nvim.bak
 mv ~/.config/nvim{,.bak}
 mv ~/.local/share/nvim{,.bak}
 mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 
 echo "Clone LazyVim starter template"
+rm -rf ~/.config/nvim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 echo "Remove LazyVim git folder"
-mkdir -p ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 
 echo "Copy LazyVim configs"
