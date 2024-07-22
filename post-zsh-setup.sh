@@ -74,5 +74,5 @@ cp -r .config/nvim ~/.config
 echo "Remove Neovim .git folder"
 rm -rf ~/.config/nvim/.git
 
-echo "Source ~/.zshrc"
-source ~/.zshrc
+# echo "Source ~/.zshrc"
+# source ~/.zshrc
