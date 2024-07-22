@@ -64,15 +64,15 @@ mv ~/.local/share/nvim{,.bak}
 mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 
-echo "Clone LazyVim starter template"
-rm -rf ~/.config/nvim
-git clone https://github.com/LazyVim/starter ~/.config/nvim
+# echo "Clone LazyVim starter template"
+# rm -rf ~/.config/nvim
+# git clone https://github.com/LazyVim/starter ~/.config/nvim
 
-echo "Remove LazyVim git folder"
-rm -rf ~/.config/nvim/.git
-
-echo "Copy LazyVim configs"
+echo "Copying Neovim configs"
 cp -r .config/nvim ~/.config
 
-#echo "Source ~/.zshrc"
-#source ~/.zshrc
+echo "Remove Neovim .git folder"
+rm -rf ~/.config/nvim/.git
+
+echo "Source ~/.zshrc"
+source ~/.zshrc
