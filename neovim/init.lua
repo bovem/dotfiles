@@ -1015,6 +1015,25 @@ require('lazy').setup({
         { '<leader>0', '<Cmd>2ToggleTerm size=20<Cr>', desc = 'Toggle Vertically Split Terminal' },
       },
     },
+
+    {
+      'christoomey/vim-tmux-navigator',
+      cmd = {
+        'TmuxNavigateLeft',
+        'TmuxNavigateDown',
+        'TmuxNavigateUp',
+        'TmuxNavigateRight',
+        'TmuxNavigatePrevious',
+        'TmuxNavigatorProcessList',
+      },
+      keys = {
+        { '<c-h>', '<cmd><C-U>TmuxNavigateLeft<cr>' },
+        { '<c-j>', '<cmd><C-U>TmuxNavigateDown<cr>' },
+        { '<c-k>', '<cmd><C-U>TmuxNavigateUp<cr>' },
+        { '<c-l>', '<cmd><C-U>TmuxNavigateRight<cr>' },
+        { '<c-\\>', '<cmd><C-U>TmuxNavigatePrevious<cr>' },
+      },
+    },
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:
     --
