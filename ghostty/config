@@ -44,4 +44,4 @@ font-size=15
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme = "/Users/bovem/Developer/tokyonight.nvim/extras/ghostty/tokyonight_night"
+theme = Ayu
