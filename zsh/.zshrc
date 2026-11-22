@@ -119,3 +119,6 @@ export OLLAMA_KV_CACHE_TYPE=q4_0
 export OLLAMA_KEEP_ALIVE=30m
 export OLLAMA_NUM_PARALLEL=1
 export OLLAMA_CONTEXT_LENGTH=8192
+
+# Directory Shortcuts
+alias notes='cd /Users/bovem/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/KnowledgeBase'
